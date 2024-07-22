@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="displayPanel">
+            <div id="display"></div>
+        </div>
+        <div id="keys">
+            <button onClick="append('+')" class="operator">+</button>
+            <button onClick="append('7')">7</button>
+            <button onClick="append('8')">8</button>
+            <button onClick="append('9')">9</button>
+            <button onClick="append('-')" class="operator">-</button>
+            <button onClick="append('4')">4</button>
+            <button onClick="append('5')">5</button>
+            <button onClick="append('6')">6</button>
+            <button onClick="append('*')" class="operator">*</button>
+            <button onClick="append('1')">1</button>
+            <button onClick="append('2')">2</button>
+            <button onClick="append('3')">3</button>
+            <button onClick="clearDisplay('0')" class="operator">C</button>
+            <button onClick="back()" class="operator"><-</button>
+            <button onClick="calculate()" class="operator">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
