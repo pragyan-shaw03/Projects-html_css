@@ -8,9 +8,9 @@ initailize();
 
 function initailize() {
     running = true;
+    stat.textContent = `X's Turn`;
     cells.forEach(cell => cell.addEventListener('click', cellClicked));
     restart.addEventListener('click', restartGame);
-    stat.textContent = `X's Turn`;
 }
 
 function cellClicked() {
@@ -50,6 +50,7 @@ function checkWinner() {
         stat.textContent = `${winner} WINS!`;
     } else if (count == 9) {
         stat.textContent = "IT's A TIE";
+        running = false;
     }
 }
 
